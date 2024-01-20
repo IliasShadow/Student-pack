@@ -21,7 +21,8 @@ public:
         for (i=0;i<marks.size();i++){
             s+=marks[i];
         }
-        if ((s/i)>=4.6) {return 1;}
+        double k=(double)s/i;
+        if (k>=4.6) {return 1;}
         else return 0;
     }
     string get_name(){return name;
